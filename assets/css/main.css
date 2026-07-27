@@ -7544,7 +7544,7 @@ input:focus-visible {
 /* ========================= Testimonials new two css end ============================= */
 /* Breadcrumb css start */
 .breadcrumb {
-    padding: 256px 0 160px;
+    padding: 150px 0 50px;
 }
 
 @media (max-width: 991px) {
