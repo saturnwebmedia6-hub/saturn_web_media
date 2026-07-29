@@ -1162,7 +1162,9 @@ input:focus-visible {
 .bg-main-700 {
     background-color: var(--main-700) !important;
 }
-
+.bg-main {
+    background-image: url(../images/bg/footer-gradient-bg.png);
+}
 .bg-main-800 {
     background-color: var(--main-800) !important;
 }
@@ -6287,7 +6289,8 @@ input:focus-visible {
 /* Submenu Start */
 .nav-submenu {
     box-shadow: 0 10px 15px -3px #0000001a, 0 4px 6px -4px #0000001a;
-    min-width: 190px;
+    /* min-width: 190px; */
+      min-width: 205px;
     visibility: hidden;
     opacity: 0;
     transform: scaleY(0);
@@ -6766,6 +6769,7 @@ input:focus-visible {
 }
 
 /* ========================= Banner one css start ============================= */
+
 .banner-one__inner {
     padding: 150px 0 194px 0;
 }
@@ -7693,3 +7697,201 @@ input:focus-visible {
 
 /* ================================== rtl css End ================================== */
 /*# sourceMappingURL=main.css.map */
+.course-card{
+    background:rgba(18,18,18,.82);
+    backdrop-filter:blur(18px);
+    border:1px solid rgba(255,184,28,.18);
+    border-radius:28px;
+    padding:28px;
+    position:relative;
+    overflow:hidden;
+    box-shadow:0 25px 60px rgba(0,0,0,.45);
+}
+
+.course-glow{
+    position:absolute;
+    right:-120px;
+    top:-120px;
+    width:260px;
+    height:260px;
+    border-radius:50%;
+    background:rgba(255,184,28,.12);
+    filter:blur(60px);
+}
+
+.offer-box{
+    background:linear-gradient(135deg,#1b5cff,#0c3dc9);
+    /* background-image: url(../images/bg/banner-four-bg.png); */
+    border-radius:22px;
+    padding:22px;
+    position:relative;
+    z-index:2;
+    background-position: center;
+}
+
+.offer-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:20px;
+}
+
+.offer-header h5{
+    color:#fff;
+    margin:0;
+    font-size:22px;
+    font-weight:700;
+}
+
+.offer-badge{
+    background:#ffb81c;
+    color:#111;
+    padding:6px 14px;
+    border-radius:50px;
+    font-size:13px;
+    font-weight:600;
+}
+
+.count-box{
+    background:rgba(255,255,255,.10);
+    border:1px solid rgba(255,255,255,.12);
+    border-radius:16px;
+    padding:18px;
+    text-align:center;
+    height:100%;
+}
+
+.count-box h2{
+    color:#fff;
+    margin:0;
+    font-size:34px;
+    font-weight:700;
+}
+
+.count-box small{
+    color:#d9e5ff;
+}
+
+.course-content{
+    margin-top:30px;
+    position:relative;
+    z-index:2;
+}
+
+.course-content h2{
+    color:#fff;
+    font-size:30px;
+    font-weight:700;
+    margin-bottom:18px;
+}
+
+.course-content p{
+    color:#bdbdbd;
+    line-height:1.8;
+}
+
+.feature-list{
+    margin-top:30px;
+}
+
+.feature-item{
+    display:flex;
+    align-items:center;
+    color:#fff;
+    margin-bottom:18px;
+}
+
+.check-icon{
+    width:36px;
+    height:36px;
+    background:#ffb81c;
+    color:#111;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin-right:15px;
+    font-weight:700;
+    flex-shrink:0;
+}
+
+.course-tags{
+    display:flex;
+    gap:12px;
+    flex-wrap:wrap;
+    margin-top:30px;
+}
+
+.course-tags span{
+    padding:10px 18px;
+    border-radius:40px;
+    background:rgba(255,255,255,.08);
+    border:1px solid rgba(255,255,255,.15);
+    color:#fff;
+}
+
+.course-tags span:hover{
+    background:#ffb81c;
+    color:#111;
+    transition:.3s;
+}
+
+/* Responsive */
+
+@media(max-width:991px){
+
+.course-card{
+    margin-top:40px;
+}
+
+.offer-header{
+    flex-direction:column;
+    gap:15px;
+    text-align:center;
+}
+
+.course-content h2{
+    font-size:28px;
+}
+
+}
+
+@media(max-width:576px){
+
+.course-card{
+    padding:18px;
+}
+
+.offer-box{
+    padding:18px;
+}
+
+.offer-header h5{
+    font-size:18px;
+}
+
+.count-box{
+    padding:15px;
+}
+
+.count-box h2{
+    font-size:26px;
+}
+
+.course-content h2{
+    font-size:24px;
+}
+
+.course-content p{
+    font-size:15px;
+}
+
+.feature-item{
+    font-size:15px;
+}
+
+.course-tags{
+    justify-content:center;
+}
+
+}
